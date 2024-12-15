@@ -1,21 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Englebert&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #7D0091;
 }
 nav {
     border: 1px solid black;
+    font-family: "Jost";
+    background-color: #1FDD00;
 }
 nav ul{
     list-style: none;
     display: flex;
     justify-content: flex-start;
-    gap: 5em;
+    gap: 8em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #7D0091;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 28px;
 }
 nav ul li a.selected{
     text-decoration: underline;
+}
+li a:hover{
+    color: #BC8AD4;
+}
+h1 {
+    font-family: "Bubblegum Sans" ;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    color: #EFFDEF;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.box {
+    width: 800px;
+    height: 310px;
+    background-color:#BC8AD4;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.box-2 {
+    width: 800px;
+    height: 400px;
+    background-color:#BC8AD4;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box-3 {
+    width: 800px;
+    height: 180px;
+    background-color:#BC8AD4;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box-4{
+    width: 800px;
+    height: 90px;
+    background-color:#BC8AD4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.box-5{
+    width: 800px;
+    height: 750px;
+    border: 2px #BC8AD4;
+    background-color:#7D0091;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+h2 {
+font-family: "Englebert";
+font-size: 60px;
+padding-left: 20px;
+}
+p {
+    text-align: center;
+    font-family: "jost";
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color:#7D0091
+}
+p.small {
+    font-size: 20px;
+}
+hr {
+    width: 1000px;
+    height: 3px;
+    background-color:#1FDD00;
+    color: #1FDD00;
+}
+a.button {
+    display: block;
+    width: 350px;
+    height: 50px;
+    background-color:#1FDD00;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    font-family: "McLaren";
+    font-size: 40px;
+    text-decoration: none;
+    color:#7D0091;
+
+}
+h3 {
+    font-family: "englebert";
+    font-size: 30px;
+    color:#EFFDEF;
+    text-decoration: underline overline;
+    text-decoration-color: #EFFDEF;
+}
+h4 {
+    font-family: "McLaren";
+    font-size: 20px;
+    color:#BC8AD4;
+}
+.footer {
+    font-family: "jost";
+    color: #EFFDEF;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+#fcf-form {
+    display:block;
+}
+
+.fcf-body {
+    margin: 0;
+    font-family: "Jost";
+    font-size: 16px;
+    line-height: 1.5;
+    color: #7D0091;
+    text-align: left;
+    background-color: #BC8AD4;
+    padding: 50px;
+    padding-bottom: 10px;
+    border: 1px solid #EFFDEF;
+    border-radius: 0.25rem;
+    max-width: 100%;
+}
+
+.fcf-form-group {
+    margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #EFFDEF;
+    background-clip: padding-box;
+    border: 1px solid #EFFDEF;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+    border: 1px solid #7D0091;
+}
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+    height: auto;
+}
+
+textarea.fcf-form-control {
+    font-family: "Jost";
+    height: auto;
+}
+
+label.fcf-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.fcf-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #7D0091;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fcf-btn {
+        transition: none;
+    }
+}
+
+.fcf-btn:hover {
+    color: #BC8AD4;
+    text-decoration: none;
+}
+
+.fcf-btn:focus, .fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #7D0091;
+}
+
+.fcf-btn-primary {
+    color: #7D0091;
+    background-color: #1FDD00;
+    border-color: #1FDD00;
+}
+
+.fcf-btn-primary:hover {
+    color: #1FDD00;
+    background-color: #7D0091;
+    border-color: #7D0091;
+}
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+    color: #EFFDEF;
+    background-color: #7D0091;
+    border-color: #7D0091;
+    box-shadow: 0 0 0 0.2rem #7D0091;
+}
+
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+    display: block;
+    width: 100%;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+    margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+    width: 100%;
 }
